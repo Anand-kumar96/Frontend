@@ -1,0 +1,66 @@
+/*
+Semantic IMDb
+Create a simple HTML document. It should consist of your favorite movie, should have actors of the movie, and some quotes from the movie that you liked. Style your page as you like.
+
+Acceptance Criteria:
+
+Following are some mandatory tags that are required. You can choose to add others as well.
+
+header should contain the name of the movie
+
+nav add 2 nav tags with ids "nav-actor" and "nav-quote" which link to different sections of your page- Actors and Quotes respectively
+
+summary should have a short summary of the plot of the movie
+
+section there should be 2 sections in the page with the ids "actor" and "quote" respectively. One section should have details about the actors in the movie, the other should have your favourite quote from the movie
+
+aside should have information about the IMDb rating of the movie and its release date
+
+footer should have Producer's name in the format: "Produced by: < name > "
+
+*/
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Semantic IMDb</title>
+        <meta name="Question3" content="Semantic IMDb">
+    </head>
+    <body>
+        <header>
+        Inception
+        </header>
+
+            <nav>
+                <a href="#actor" id="nav-actor">Actors</a>
+                <a href="#quote" id="nav-quote">quotes</a>
+              </nav>
+
+        <details>
+        <summary> a short summary of the plot of the movie</summary>
+       <p>Dom Cobb (Leonardo DiCaprio) is a thief with the rare ability to enter people's dreams and steal their secrets from their subconscious.
+            His skill has made him a hot commodity in the world of corporate espionage but has also cost him everything he loves.
+            Cobb gets a chance at redemption when he is offered a seemingly impossible task: Plant an idea in someone's mind. If he succeeds,
+             it will be the perfect crime, but a dangerous enemy anticipates Cobb's every move.</p>
+       </details>
+       <section>
+        <h1 id="actor">Leonardo DiCaprio</h1>
+       </section>
+
+       <section>
+           <h1 id="quote">You need the simplest version of the idea-the one that will grow naturally in the subject's mind.
+             Subtle art</h1>
+       </section>
+
+       <aside>
+       <h4> IMDb rating</h4>
+       <p>8.8</p>
+        <h4> release date</h4>
+        <p>16 July 2010</p>
+       </aside>
+
+       <footer>
+      <p>Produced by:Christopher Nolan </p>
+      </footer>
+    </body>
+
+</html>
