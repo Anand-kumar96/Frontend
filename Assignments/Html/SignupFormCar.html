@@ -1,0 +1,74 @@
+/*
+Signup Form Car
+Make a Signup form that has the following HTML elements
+1. Name*,
+2. Email*
+3. Gender* (radio buttons),
+4. Car Brands (options : [BMW, Audi, Mercedez])
+5. Age*
+6. DOB*
+7. Password*
+8. submit button.
+
+Kindly follow all the instructions mentioned below so that your code passes all the test cases
+
+Instructions:
+1. * are required fields,
+2. Use method attribute value that you should use in this case for the form!
+3. The respective input elements for the mentioned fields should have ids
+#name, #email, #password, #cars, #age, #dob. For example, The element for selecting car brand should have id #cars
+4. The radio buttons for gender should have name attribute as gender.
+5. All input elements must also have corresponding labels with for attribute set to id's of element they belong.
+For example, the label for input of name will be <label for="name"> Name</label>
+*/
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup Form Car</title>
+    </head>
+    <body>
+        <form name="personal_details" method="POST" action="http:myserver">
+
+        <label for="name">Name*</label>
+        <input name="name" id="name" type="text" required>
+        <br>
+
+        <label for="email">Email*</label>
+        <input  name="email" id="email" type="email" required>
+        <br>
+
+        <label for="gender">Gender*</label>
+        <input name="gender" id="gender" type="radio" required>
+        <label for="gender">Male</label>
+        <input name="gender" id="gender" type="radio" required>
+          <label for="gender">Female</label>
+        <br>
+
+        <section>
+        <label for="cars">Car Brands:</label>
+        <select name="cars" id="cars" >
+        <option value="none" Selected>Select Car</option>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Mercedez">Mercedez</option>
+        </select>
+        </section>
+        <br>
+
+        <label for="age">Age*</label>
+        <input id="age" name="agre" type="number" required>
+        <br>
+
+        <label for="dob">DOB*</label>
+        <input id="dob" name="dob" type="date" required>
+        <br>
+
+         <label for="password">Password*</label>
+        <input id="password" name="password" type="password" required>
+        <br>
+
+        <label for="submit">Submit</label>
+        <button id="submit" name="submit" type="submit" value="submit">Submit</button>
+        </form>
+    </body>
+</html>
