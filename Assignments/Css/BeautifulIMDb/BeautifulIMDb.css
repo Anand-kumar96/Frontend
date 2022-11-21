@@ -1,0 +1,11 @@
+.moviePic {
+    width: 400px;
+    height: 600px;
+    opacity:0.9;
+    }
+    .movieDetail{
+    position: static;
+    top: 50px;
+    text-align: center;
+    font-size: 40px; 
+    }
